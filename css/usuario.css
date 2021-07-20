@@ -1,0 +1,192 @@
+    body{
+        font-family: sans-serif;  
+      }
+
+      .col-md-2 {
+        text-align: center;
+        width: 25%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        }
+
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+          text-align: center;
+        }
+      
+      .dados{
+        padding: 1rem;
+        border: 1px solid #ccc;
+      }
+      
+      .dados button{
+        border: none;
+        background-color: #5eb2e6;
+        color: white;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: .75rem 1rem;
+      }
+      .dados button.green{
+        background-color: #005c54;
+        margin-top: 2rem;
+      }
+      
+      .dados .container{
+        margin-top: 1rem;
+        display: grid;
+        grid-gap: .5rem;
+      }
+      
+      .dados .container input{
+        padding: .5rem .75rem;
+        border: 1px solid #ccc;
+      }
+      
+      .dados .container input:focus{
+        border: 1px solid black;
+        outline: none;
+      }
+      
+      .dados .container .dependente{
+        display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 24% 55%;
+      }
+      
+      .dados .container .dependente .action a{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        display: inline-block;
+      }
+      
+      .dados .container .dependente .action a.salvar{
+        border-radius: 2px;
+        background-color: #efefef;
+        color: #005c54;
+      }
+      
+      .disabled{
+        pointer-events: none;
+        opacity: .5;
+        filter: grayscale(100%);
+      }
+
+      .col-xs-6 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .action {
+      display: flex;
+    }
+
+    #save {
+      display: flex;
+    }
+
+    #quantidade {
+      padding: 5px;
+      border-radius: 10px;
+      width: 15%;
+      border: solid 2px rgb(80, 80, 80);
+    }
+
+    #descricao {
+      width: 75%;
+      padding: 5px;
+      border-radius: 10px;
+      border: solid 2px rgb(80, 80, 80);
+      margin: 2px;
+    }
+
+    #new_quantidade {
+      padding: 5px;
+      border-radius: 10px;
+      width: 15%;
+      border: solid 2px rgb(80, 80, 80);
+      margin-right: 4px;
+    }
+
+    #new_descricao {
+      width: 75%;
+      padding: 5px;
+      border-radius: 10px;
+      border: solid 2px rgb(80, 80, 80);
+      margin: 2px;
+    }
+
+    #add-campo {
+      padding: 5px;
+      border-radius: 5px;
+      border: solid 2px rgb(80, 80, 80);
+      background: #4cff4c;
+    color: black;
+    }
+
+    #orcar {
+      padding: 10px;
+      background-color: #30a5ff;
+      color: black;
+      border-radius: 10px;
+      border: solid 1px rgb(0, 0, 0);
+      width: 20%;
+    }
+    .box-alert-Painel{
+      padding: 10px;
+      color:  white;
+      margin: 10px 0
+    }
+    .sucesso{
+      background: #0db81b;
+    }
+    .erro{
+      background-color:#bf2126;
+    }
+    .img-perfil{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid black;
+    }
+    .nome-pedido{
+      max-width: 400px;
+      padding: 10px 0;
+      width: 100%;
+      margin-bottom: 10px;
+      padding-left: 5px;
+      border: 0;
+      border-bottom: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+      font-size: 18px;
+
+    }
+
+    @media screen and (max-width: 576px) {
+      #quantidade {
+        width: 25%;
+      }
+  
+      #descricao {
+        width: 65%;
+      }
+  
+      #new_quantidade {
+        width: 25%;
+        
+      }
+  
+      #new_descricao {
+        width: 65%;
+      }
+
+      #orcar {
+        width: auto;
+      }
+  
+    }
+
+    

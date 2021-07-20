@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formlogin {
+    background: #c29500;
+    color: black;
+    padding: 20px;
+    border: solid 1px black;
+    box-shadow: 3px 3px rgb(105, 72, 0);
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background: rgba(0, 0, 0, 0.795);
+    color: white;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+span {
+    color: black;
+}
+
+.coluna1 {
+    width: 33%;
+}
+
+#radios {
+    margin: 20px;
+}
+.tipo-file input[type=file]{
+    display: none;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
+    height: 40px;
+}
+.tipo-file label{
+    text-align: left;
+    cursor: pointer;
+    position:relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.tipo-file label:hover{
+   border: 1px solid black;
+}
+.box-alert{
+    width: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align:  center;
+    color: white;
+    border-radius: 20px;
+    margin-bottom:  10px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sucesso{
+    background-color: green ;
+}
+.erro{
+    background-color: #f25a61 ;
+}
+.box-cadastro{
+    max-width: 400px;
+    width: 100%;
+    padding: 0 1%;
+
+}
+
+@media screen and (max-width: 576px) {
+    .coluna1 {
+        width: 90%;
+    }
+    }
+
+    @media screen and (max-width: 992px) {
+        .coluna1 {
+            width: 50%;
+        }
+        }
+
+        @media screen and (max-width: 768px) {
+            .coluna1 {
+                width: 70%;
+            }
+            }

@@ -1,0 +1,562 @@
+
+    body{
+        font-family: sans-serif;  
+      }
+      .w100{
+        width: 100%;
+      }
+      .box-alert{
+    width: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align:  center;
+    color: white;
+    border-radius: 20px;
+    margin-bottom:  10px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sucesso{
+    background-color: green ;
+}
+.erro{
+    background-color: #f25a61 ;
+}
+.center{
+  text-align: center;
+}
+.w49{
+  width: 50% !important;
+  text-align: center;
+}
+.w33{
+  width: 33.3%;
+}
+.tleft{
+  text-align: left;
+}
+.tright{
+  text-align: right;
+}
+.borderBottom{
+  border-bottom: 1px solid #ccc;
+}
+.borderLeft{
+  border-left: 2px solid #ccc;
+}
+.borderTop{
+  border-top: 1px solid #ccc;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+        
+      .col-md-2 {
+        text-align: center;
+        width: 25%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        }
+
+        .cotacoes {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        #num_pedido {
+        background-color: rgb(206, 206, 206);
+        padding: 5px;
+        margin-top: 20px;
+}
+
+        .col_cotacoes1 {
+          width: 100%;
+          background-color: white;
+          padding: 15px;
+        }
+    
+        .col_cotacoes2 {
+          width: 100%;
+          background-color: white;
+          padding: 15px;
+        }
+
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+          text-align: center;
+        }
+      
+      .dados{
+        padding: 1rem;
+        border: 1px solid #ccc;
+      }
+      
+      .dados button{
+        border: none;
+        background-color: #5eb2e6;
+        color: white;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: .75rem 1rem;
+      }
+      .dados button.green{
+        background-color: #005c54;
+        margin-top: 2rem;
+      }
+      
+      .dados .container{
+        margin-top: 1rem;
+        display: grid;
+        grid-gap: .5rem;
+      }
+      
+      .dados .container input{
+        padding: .5rem .75rem;
+        border: 1px solid #ccc;
+      }
+      
+      .dados .container input:focus{
+        border: 1px solid black;
+        outline: none;
+      }
+      
+      .dados .container .dependente{
+        display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 24% 55%;
+      }
+      
+      .dados .container .dependente .action a{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        display: inline-block;
+      }
+      
+      .dados .container .dependente .action a.salvar{
+        border-radius: 2px;
+        background-color: #efefef;
+        color: #005c54;
+      }
+      
+      .disabled{
+        pointer-events: none;
+        opacity: .5;
+        filter: grayscale(100%);
+      }
+
+      .col-xs-6 {
+        width: 50%;
+        text-align: center;
+    }
+    .valorTotal{
+      width: 100%;
+      padding: 10px 0;
+      background-color: #ccc;
+      text-align: center;
+      margin-top: 15px;
+      border: 1px solid #444;
+    }
+    .valorTotal p{
+      margin: 0;
+      padding: 0;
+      color: black;
+      text-transform: uppercase;
+
+    }
+    .cot-fornecedor input[type=text]{
+     width: 99%;
+     padding: 10px 0;
+     margin-bottom: 5px;
+     padding-left: 5px;
+     font-size: 16px;
+
+    }
+    .cot-fornecedor .v1,.cot-fornecedor .v2,.cot-fornecedor .v3,.cot-fornecedor .v4,.cot-fornecedor .v5,.cot-fornecedor .v6,.cot-fornecedor .v7,.cot-fornecedor .v8,.cot-fornecedor .v9,.cot-fornecedor .v10{
+      width: 70% !important;
+    }
+    input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    float: right;
+    }
+    input[type="checkbox"] + label.checked {
+      position: relative;
+      cursor: pointer;
+      padding-left: 30px;
+      
+    }
+    input[type="checkbox"] + label.checked::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: solid 2px;
+      vertical-align: bottom;
+    }
+    input[type="checkbox"]:checked + label.checked::after {
+      content: "";
+      position: absolute;
+      left: 28px;
+      bottom: -6px;
+      width: 10px;
+      height: 20px;
+      border-right: solid 3px green;
+      border-bottom: solid 3px green;
+      transform: rotate(45deg);
+      color: black;
+    }
+    .cot-quantidade{
+      float: left;
+      width: 35%;
+
+    }
+    .cot-descricao{
+      float: left;
+      width: 35%;
+    }
+    .cot-valor{
+      width: 30%;
+      float: left;
+      text-align: left;
+    }
+    .cot-info{
+      text-align: center;
+      margin-top: 20px;
+
+    }
+    .cot-info input[type=text]{
+      width: 51%;
+      float: left;
+      text-align: center;
+      padding-left:  0;
+      margin: 0;
+       position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 20px;
+      color: black;
+    }
+    .valor-cot{
+      text-align: center;
+      font-size: 22px;
+      width: 100% !important;
+    }
+    .valor-individual{
+      width: 10% !important; 
+      float: right;
+      background-color: red;
+    }
+
+    .btn {
+      width: auto;
+      padding: 15px;
+      background: #5eb2e6;
+      color: #000;
+    }
+
+    .cotas {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #rodape {
+      padding: 5px;
+     
+      color: black;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .box-alert-Painel{
+      padding: 10px;
+      color:  white;
+      margin: 10px 0
+    }
+    .sucesso{
+      background: #0db81b;
+    }
+    .erro{
+      background-color:#bf2126;
+    }
+     
+     /*Página de edição do Usuario e Fornecedor*/
+     .clear{
+      clear: both;
+     }
+     .left{
+      float: left;
+     }
+     .right{
+      float: right;
+     }
+     .container-editar{
+      width: 100%;
+      background-color: white;
+      padding: 20px 0;
+      border: 1px solid #ccc;
+     }
+     .container-editar .w50{
+      width: 51%;
+      float: left;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+     }
+     .container-editar form{
+      padding: 20px;
+
+     }
+     .container-editar input[type=text],.container-editar input[type=password]{
+      width: 99%;
+      float: left;
+      padding: 10px 0;
+
+      margin-bottom: 20px;
+      text-align: center;
+     }
+     .container-editar input[type=submit]{
+      padding: 10px 30px;
+      background-color: #0254a6;
+      border:0;
+      color: white;
+     }
+     .container-editar input[type=submit]:hover{
+      background-color: #01478c;
+     }
+  
+     .container-editar label{
+        text-align: center;
+        font-size: 18px;
+        color: #444;
+     }
+     .container-wraper{
+      padding: 20px;
+      margin-bottom: 50px;
+     }
+     .container-single{
+      text-align: center;
+  
+      padding: 3px 0;
+      cursor: pointer;
+     }
+     .container-single h4{
+      color: blue;
+     }
+     .container-overflow{
+      max-height: 550px;
+      height: 100%;
+      padding-bottom: 100px;
+
+     }
+     .container-overflow span{
+      font-size: 18px;
+      display: block;
+      margin: 30px 0;
+      border-bottom: 2px solid #ccc;
+      text-align: left;
+      padding-left: 5px;
+      width: 250px;
+     }
+     .box-single{
+      border: 1px solid #ccc;
+      margin: 5px;
+      
+
+     }
+     .box-single span{
+      font-size: 16px;
+     }
+     .box-single i{
+      padding: 15px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+     }
+     .fixed-info{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin: 2%;
+      transform: translate(-50%,-50%);
+      max-width: 900px;
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
+      background-color: white;
+     }
+     .container-fixed{
+      
+     }
+     .container-fixed h5{
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 17px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ccc;
+      display: block
+      margin: 0 auto;
+     }
+     .container-fixed div{
+      padding: 10px 2%;
+     }
+     .container-single .img{
+      width: 100%;
+      height: 250px;
+     
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+     }
+     .container-single img{
+      width: 100%;
+      height: 250px;
+     
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+     }
+     .container-single input[type=submit]{
+      margin: 0 10px;
+     }
+     .box-inicio{
+      width: 45%;
+      height: 200px;
+      padding: 10px 20px; 
+  
+      margin-top: 30px;
+      margin-bottom: 30px;
+     }
+     .box-inicio p{
+      color: blue;
+      font-size: 33px;
+      text-align: center;
+      margin-top: 30px;
+     }
+     .box-inicio .box-usuario{
+          border: 1px dotted #000dff;
+     }
+    @media screen and (max-width: 1070px){
+      .w33{
+        width: 100% !important;
+      }
+      .container-single span{
+        margin: 20px auto;
+        text-align: center;
+        border-left: 0 !important;
+      }
+      .container-overflow{
+        margin: 0;
+        padding-bottom:  0;
+        padding-top: 10px;
+
+      }
+    }
+    /*home*/
+   .home-single{
+    width: 80%;
+    padding: 30px 0;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    border-radius: 10px;
+   }
+   .home-single p{
+    padding: 0;
+    font-size: 22px;
+    color: white;
+   }
+
+   .cp p{
+      font-size: 18px;
+      text-transform: uppercase;
+   }
+   @media screen and (max-width: 920px){
+    .box-inicio{
+      width: 100%;
+     }
+   }
+     @media screen and (max-width: 780px){
+      .container-editar .w50{
+      width: 90%;
+     
+     }
+     .box-single span{
+      font-size: 14px;
+     }
+     .w49{
+      width: 100% !important; 
+     }
+      .container-wraper{
+      height: 100% !important;
+      padding: 50px !important;
+     }
+
+     .cp{
+    margin-bottom: 30px;
+   }
+     }
+     @media screen and (max-width: 580px){
+      .container-wraper{
+        padding: 0;
+      }
+      .box-single span{
+        font-size: 12px;
+      }
+      .cot-fornecedor input[type=text]{
+     width: 100%;
+     padding: 5px 0;
+     margin-bottom: 3px;
+     padding-left: 3px;
+     font-size: 11px;
+
+    }
+     input[type="checkbox"] + label.checked::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: solid 1px;
+      vertical-align: bottom;
+    }
+     input[type="checkbox"]:checked + label.checked::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      bottom: -3px;
+      width: 10px;
+      height: 10px;
+      border-right: solid 3px green;
+      border-bottom: solid 3px green;
+      transform: rotate(45deg);
+      color: black;
+    }
+    .cot-fornecedor .v1,.cot-fornecedor .v2,.cot-fornecedor .v3,.cot-fornecedor .v4,.cot-fornecedor .v5,.cot-fornecedor .v6,.cot-fornecedor .v7,.cot-fornecedor .v8,.cot-fornecedor .v9,.cot-fornecedor .v10{
+      width: 60% !important;
+    }
+    .header-title{
+      font-size: 11px;
+      text-align: center;
+     }
+     .header-title b{
+      width: 100%;
+      margin:3px 0;
+     }
+     .cot-fornecedor label{
+      font-size: 11px !important;
+     }
+    }

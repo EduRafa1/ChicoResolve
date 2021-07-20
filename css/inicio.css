@@ -1,0 +1,138 @@
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  background-color: #1f1f24;
+}
+
+.navbar {
+  background: black ;
+}
+
+
+#image-mobile {
+  display: none;
+}
+
+.section-one {
+display: flex;
+}
+
+h2, h4 {
+  color: rgb(255, 196, 0);
+}
+
+p {
+  color: rgb(255, 239, 188);
+}
+
+.text {
+  background: #292929;
+  padding: 10px;
+  padding-bottom: 100px;
+}
+
+#btn-cadastro {
+  text-align: center;
+  width: 100%;
+  color: black;
+  border: solid 1px black;
+  border-radius: 3px;
+  background: rgb(255, 196, 0);
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#btn-login {
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 239, 188);
+  border: solid 1px black;
+  border-radius: 3px;
+  background: rgb(0, 1, 88);
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#btn-cadastro:hover {
+animation: bounce 1s;
+}
+
+#btn-login:hover {
+  animation: bounce 1s;
+  }
+
+  #rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+  }
+
+@media screen and (max-width: 576px) {
+  .section-one {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  #image-mobile {
+    display: flex;
+  }
+
+  #imageone {
+    display: none;
+  }
+  
+}
+
+/*@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (max-width: 992px) { 
+  .section-one {
+  position: unset; 
+  display: flex;
+  max-width: 100%;
+  /* flex-wrap: wrap; */
+  flex-direction: column-reverse; }
+
+}
+
+/*
+// X-Large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 1300px) {
+
+  .section-one {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/*
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }*/
+
+
+
